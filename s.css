@@ -1,0 +1,497 @@
+* {
+    box-sizing: border-box;
+   font-family: 'Times New Roman', Times, serif;
+    font-size: 10px;
+    margin: 0;
+    /* border: 1px solid red; */
+}
+
+body {
+    width: 100%;
+    color: #222222;
+}
+
+.top-navbar {
+    display: flex;
+    width: 100%;
+    max-width: 66.67vw;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1.2em auto 0 auto;
+}
+
+.etsy-logo svg {
+    fill: #f1641e;
+    width: 80px;
+    cursor: pointer;
+}
+
+.search-bar-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #222222;
+    border-radius: 50px;
+    padding: 1em 2em;
+    cursor: pointer;
+    margin: 0 1em;
+}
+
+.search-bar-container input {
+    width: auto;
+    flex: 1;
+    font-size: 1.6em;
+    outline: 0;
+    border: 0;
+}
+
+.search-bar-container input::placeholder {
+    color: #b5b5b5;
+}
+
+.search-bar-container svg, .nav-right-group svg {
+    fill: #222222;
+    width: 24px;
+    cursor: pointer;
+}
+
+.nav-right-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
+    gap: 0.5em;
+}
+
+.nav-right-group-text {
+    width: max-content;
+    cursor: pointer;
+    font-size: 1.6em;
+    font-weight: 700;
+    background-color: transparent;
+    border-radius: 50px;
+    padding: 1em 1.2em;
+}
+
+.nav-right-group-text:hover {
+    background-color: #e9e9e9;
+    border-radius: 50px;
+    padding: 1em 1.2em;
+}
+
+.nav-right-group-icon {
+    background-color: transparent;
+    border-radius: 50%;
+    padding: 1.2em;
+}
+
+.nav-right-group-icon:hover {
+    background-color: #e9e9e9;
+    border-radius: 50%;
+    padding: 1.2em;
+}
+
+.nav-right-group-icon svg {
+    fill: #222222;
+    width: 24px;
+    cursor: pointer;
+}
+
+.second-navbar {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.second-navbar-list {
+    width: 100%;
+    max-width: 66.67vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.second-navbar-list div {
+    color: #222222;
+    font-size: 1.6em;
+    cursor: pointer;
+    border: 2px solid transparent;
+    padding: 1em 0;
+}
+
+.second-navbar-list div:hover {
+    border-bottom: 2px solid #222222;
+}
+
+main {
+    margin-top: 20px;
+    border-top: 2px solid #dedede;
+    width: 100%;
+}
+
+.categories {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.categories-contents {
+    width: 100%;
+    max-width: 66.67vw;
+}
+
+.categories-contents h1 {
+    font-size: 2.6em;
+    font-weight: 600;
+    margin: 0.1em 0;
+}
+
+.categories-group {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em 0em;
+    
+}
+
+.categories-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 270px;
+    width: 240px;
+    border: 1px solid #e9e9e9;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.categories-card:hover {
+    cursor: pointer;
+    box-shadow: 0 5px 20px 5px #e9e9e9;
+}
+
+.categories-card-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    height: 70%;
+    border-radius: 5px;
+}
+
+.categories-card-image img {
+    width: 240px;
+}
+
+.categories-card-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 30%;
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.about-etsy {
+    margin-top: 8em;
+    background-image: url(etsy_background.png);
+    background-repeat: no-repeat;
+    /* overflow: hidden; */
+    height: 855px;
+}
+
+.what-is-etsy {
+    width: 100%;
+}
+
+.what-is-etsy h1 {
+    font-size: 4.5em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: lighter;
+    text-align: center;
+    margin-top: 1.5em;
+    padding-top: 1.5em;
+}
+
+.what-is-etsy p {
+    text-decoration: underline;
+    text-align: center;
+    font-size: 1.6em;
+    font-weight: lighter;
+    padding: 0.5em 0;
+    cursor: pointer;
+}
+
+.etsy-column-group {
+    max-width: 66.67vw;
+    margin: 0 auto;
+    display: flex;
+}
+
+.etsy-column {
+    width: 33%;
+    padding: 2em;
+}
+
+.etsy-column h1 {
+    font-size: 2.75em;
+    margin: 1.5rem 0 2rem 0;
+}
+
+.etsy-column p, .etsy-column span {
+    font-size: 1.6rem;
+    line-height: 3rem;
+    text-align: justify;
+}
+
+.etsy-column span {
+    border-bottom: 1px dashed #222222;
+    cursor: help;
+}
+
+.etsy-help-text {
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0.5em auto;
+}
+
+.etsy-help-button {
+    margin: 0 auto;
+    width: max-content;
+    text-align: center;
+    font-size: 1.75em;
+    border: 2px solid #222222;
+    border-radius: 50px;
+    padding: 0.75em 1em;
+}
+
+.etsy-help-button:hover {
+    cursor: pointer;
+    box-shadow: 0 1px 10px #b5b5b5;
+    margin: -1px auto;
+    padding: calc(0.75em + 1px) calc(1em + 1px)
+}
+
+.subscribe-text {
+    text-align: center;
+    margin: 6em 0 1em 0;
+    font-size: 1.7em;
+    font-weight: bold;
+}
+
+.subscribe-form {
+    display: flex;
+    border: 1px solid #efefef;
+    border-radius: 50px;
+    background-color: #ffffff;
+    width: max-content;
+    height: max-content;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.subscribe-form:hover {
+    border: 1px solid #222222;
+}
+
+.subscribe-form input {
+    margin-left: 1em;
+    color: #222222;
+    font-size: 1.6em;
+    outline: 0;
+    border: 0;
+    width: 24em;
+}
+
+.subscribe-form input::placeholder {
+    color: #b5b5b5;
+}
+
+.subscribe-form div {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 1em 1em;
+}
+
+.subscribe-form div:hover {
+    background-color: #efefef;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.powered-by {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8em;
+    gap: 1em;
+}
+
+.powered-by-logo svg {
+    fill: #ffffff;
+    width: 36px;
+}
+
+.powered-by-text {
+    color: #ffffff;
+    border-bottom: 1px dashed #ffffff;
+    font-size: 1.75em;
+    cursor: help;
+}
+
+/* FOOTER */
+
+.footer-columns-section {
+    background-color: #2f466c;
+    color: #ffffff;
+    width: 100%;
+    display: flex;
+    justify-content: center
+}
+
+.footer-columns-group {
+    width: 68%;
+    display: flex;
+    justify-content: space-between;
+    margin: 2em auto 3em auto;
+}
+
+.footer-columns {
+    width: 25%;
+    line-height: 2;
+}
+
+.footer-columns h1 {
+    font-size: 1.5em;
+    margin: 0.8em 0;
+}
+
+.footer-columns p {
+    font-size: 1.33em;
+}
+
+.footer-columns p:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.download-button {
+    display: flex;
+    width: max-content;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #ffffff;
+    border-radius: 50px;
+    padding: 0 1.5em;
+    margin: 3em 0em;
+}
+
+.etsy-app-icon svg {
+    fill: #ffffff;
+    width: 24px;
+    height: 24px;
+    margin-top: 6px;
+}
+
+.download-button p {
+    font-size: 1.33em;
+    font-weight: bold;
+}
+
+.download-button p:hover {
+    text-decoration: none;
+}
+
+.download-button:hover {
+    border: 2px solid #ffffff;
+    padding: calc(0em + 1px) calc(1.5em + 1px);
+    margin: calc(3em - 1px) calc(0em - 1px);
+
+}
+
+.social-icons {
+    display: flex;
+    gap: 1em;
+}
+
+.social-icons svg {
+    fill: #ffffffff;
+    width: 36px;
+}
+
+.social-icons div {
+    width: 50px;
+    height: 50px;
+    padding: 7px;
+    background-color: transparent;
+    border-radius: 50%;
+}
+
+.social-icons div:hover {
+    width: 50px;
+    height: 50px;
+    padding: 7px;
+    background-color: #4a5e7f;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.footer-bottom-section {
+    background-color: #232347;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em 0;
+}
+
+.footer-bottom-contents {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-bottom-group1 {
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    padding: 0.75em 2em;
+}
+
+.footer-bottom-group1:hover {
+    background-color: #3f3f5f;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.footer-bottom-group1 svg {
+    width: 18px;
+    fill: #ffffff;
+}
+
+.footer-bottom-group1 div {
+    font-size: 1.33rem;
+    font-weight: bold;
+}
+
+.footer-bottom-group2 {
+    font-size: 1.33rem;
+    color: #ffffff;
+}
+
+.footer-bottom-group2 span {
+    font-size: 1.33rem;
+    color: #ffffff;
+    text-decoration: underline;
+    cursor: pointer;
+}
